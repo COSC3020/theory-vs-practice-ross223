@@ -14,3 +14,9 @@
   complexity suggests a different time.
 
 Add your answers to this markdown file.
+
+1. The constants matter but they dont appear in asymptotic analysis
+2. Machines can have different specs to them which changes runtime
+3. If you use an asymptotically better algorithm with smaller input sizes, other algorithms could be better
+
+
