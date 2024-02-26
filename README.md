@@ -19,4 +19,12 @@ Add your answers to this markdown file.
 2. Machines can have different specs to them which changes runtime
 3. If you use an asymptotically better algorithm with smaller input sizes, other algorithms could be better
 
+I would guess 10 seconds as the worst case scenerio for binary search is O(log(n)) and as you add more elements,
+it is more likely to approach this bound. Since log(10000) is about 14, I would say something in between these two
+values is a good guess.
+
+1. The actual complexity of a search is not log(n) but rather this is the function that impacts the growth the most so other constants will impact the actual time
+2. Programming language could increase runtime
+3. Machine components impact runtime as well
+
 
