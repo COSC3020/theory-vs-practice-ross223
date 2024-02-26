@@ -23,6 +23,7 @@ I would guess 10 seconds as the worst case scenerio for binary search is O(log(n
 it is more likely to approach this bound. Since log(10000) is about 14, I would say something in between these two
 values is a good guess.
 
+Asyptotic complexity is not the only thing that impacts how fast a program runs, here are a few things that could increase runtime:
 1. The actual complexity of a search is not log(n) but rather this is the function that impacts the growth the most so other constants will impact the actual time
 2. Programming language could increase runtime
 3. Machine components impact runtime as well
