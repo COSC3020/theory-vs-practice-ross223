@@ -15,29 +15,32 @@
 
 Add your answers to this markdown file.
 
-1. The constants matter but they dont appear in asymptotic analysis
+1. Asymptotic analysis observes the algorithm without considering constant
+   factors, so while they impact the runtime, they don't show up in the
+   asyptotic analysis.
 2. Machines can have different specs to them which changes runtime
-3. Asymptotic Analysis ignores smaller input sizes so if your program
-   is expected to use more of these, asymptotic complexity is not always
-   a good guess for the runtime
+3. Asymptotic analysis is only useful for input sizes larger than a
+   specific n_0, so runtime for values below this n_0 are not accurately
+   depicted by the analysis.
 
-I would guess 10 seconds; as the worst case scenerio for binary search is O(log(n)) and the best case is O(1). 
-Therefore, the runtime has to fall inbetween these two values. Since we know that 1000 elements took 5 
-seconds to run, it has to lie inbetween 5 seconds and log(10000) because more elements will not make the program
-run faster. Since log(10000) is 14 I would guess 10.
+The asympotitic analysis for binary search is O(log(n)). This means for a certain n the runtime
+should be about log of that n. So, log(1000) is approximately 9.97 and log(10000) is approximately
+13.29. Since we know that running the program with 1000 elements took 5 seconds, that means that 
+running the program with 10000 elements should be proportional to the log values. Therefore,
+a good guess could be calculated using cross multiplication:
 
-Asyptotic complexity is not the only thing that impacts how fast a program runs, here are a few things that could increase runtime:
-1. The actual complexity of a search is not log(n) but rather this is the function
-   that impacts the growth the most, so other constants will impact the actual time.
-   Therefore, my guess could be off because I dont know these other values so even
-   though that impact both tests, the guess could be completely wrong without them.
-2. Programming language could increase runtime as it takes a computer a completely
-   different amount of time to complie ceratin programs and this cannot be taken
-   into account when talking about specifically asymptotic complexity. Therefore,
-   the guess could be off since this was not taken into consideration.
-3. Machine components impact runtime as well, so once again asymptoitic analysis
-   cannot accruately take this into account. Therefore, my guess would be off since
-   I only used asympotic complexity to analze it.
+5/9.97 = x/13.29 => x = (5/9.97) * 13.29 => x = 6.66
+
+So a good guess would be 6.66 seconds.
+
+1. The program was run on a different machine than the first one that had worse specs. This would
+   impact the guess as the runtime could not be correctly calculated using only asymptotic complexity.
+2. The algorithm was made unefficent for larger data sizes. Since I am just assuming that the
+   average case for the algorithm is O(log(n)) this would impact the runtime because in reality
+   the runtime could be much worse.
+3. There are other programs running on the computer during the test. Programs can slow each other
+   down due to necessary computational memory. If other programs were running on the computer,
+   different times would be observed because of the unaccounted external runtimes.
 
 
 
