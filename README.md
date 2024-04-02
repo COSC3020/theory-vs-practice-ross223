@@ -18,7 +18,10 @@ Add your answers to this markdown file.
 1. Asymptotic analysis observes the algorithm without considering constant
    factors, so while they impact the runtime, they don't show up in the
    asyptotic analysis.
-2. Machines can have different specs to them which changes runtime
+2. While asymptotic analysis can tell us about the theoretical runtime of a program
+   for very large input sizes, it doesn't account for practical uses of the algorithm,
+   so other factors like memory usage might throttle the program if the algorithm was
+   implemented poorly.
 3. Asymptotic analysis is only useful for input sizes larger than a
    specific n_0, so runtime for values below this n_0 are not accurately
    depicted by the analysis.
@@ -35,9 +38,9 @@ So a good guess would be 6.66 seconds.
 
 1. The program was run on a different machine than the first one that had worse specs. This would
    impact the guess as the runtime could not be correctly calculated using only asymptotic complexity.
-2. The algorithm was made unefficent for larger data sizes. Since I am just assuming that the
+2. The algorithm was made unefficent for data sets. Since I am just assuming that the
    average case for the algorithm is O(log(n)) this would impact the runtime because in reality
-   the runtime could be much worse.
+   the runtime could be much worse depending on the implementation.
 3. There are other programs running on the computer during the test. Programs can slow each other
    down due to necessary computational memory. If other programs were running on the computer,
    different times would be observed because of the unaccounted external runtimes.
