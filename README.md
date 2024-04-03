@@ -17,12 +17,12 @@ Add your answers to this markdown file.
 
 1. Asymptotic analysis observes the algorithm without considering constant
    factors, so while they impact the runtime, they don't show up in the
-   asyptotic analysis.
+   asymptotic analysis.
 2. An algorithm's runtime is not only influenced by the programming, but also other
-   things in the computer like memory. If one program is able to use these components
-   more effectively than another, it will have a faster runtime even if
-   they both have the same asymptotic complexity.
-4. Asymptotic analysis is only useful for input sizes larger than a
+   things in the computer like memory. If a program is optimized to deallocate memory better
+   than another it will result in faster runtime as there are less memory leaks. So even if the
+   programs have the same asymptotic complexity, one will run much quicker than the other.
+3. Asymptotic analysis is only useful for input sizes larger than a
    specific n_0, so runtime for values below this n_0 are not accurately
    depicted by the analysis.
 
