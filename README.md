@@ -18,10 +18,9 @@ Add your answers to this markdown file.
 1. Asymptotic analysis observes the algorithm without considering constant
    factors, so while they impact the runtime, they don't show up in the
    asymptotic analysis.
-2. An algorithm's runtime is not only influenced by the programming, but also other
-   things in the computer like memory. If a program is optimized to deallocate memory better
-   than another it will result in faster runtime as there are less memory leaks. So even if the
-   programs have the same asymptotic complexity, one will run much quicker than the other.
+2. Certain notations like big O aren't closely related to the actual time complexity.
+   For instance, most programs have runtime of $O(n!)$ and while this is true,
+   it doesn't explain anything about the actual runtime of the program.
 3. Asymptotic analysis is only useful for input sizes larger than a
    specific n_0, so runtime for values below this n_0 are not accurately
    depicted by the analysis.
