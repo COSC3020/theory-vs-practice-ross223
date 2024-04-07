@@ -18,9 +18,10 @@ Add your answers to this markdown file.
 1. Asymptotic analysis observes the algorithm without considering constant
    factors, so while they impact the runtime, they don't show up in the
    asymptotic analysis.
-2. Certain notations like big O aren't closely related to the actual time complexity.
-   For instance, most programs have runtime of $O(n!)$ and while this is true,
-   it doesn't explain anything about the actual runtime of the program.
+2. Certain notations like big O aren't tightly bound to the actual time complexity.
+   For instance, most programs have runtime of O(n!). While this is a true
+   statement, this doesn't explain anything about the actual runtime of the algorithm;
+   as for all f(n) < n!, O(f(n)) is included in O(n!).
 3. Asymptotic analysis is only useful for input sizes larger than a
    specific n_0, so runtime for values below this n_0 are not accurately
    depicted by the analysis.
