@@ -45,5 +45,6 @@ So a good guess would be 6.66 seconds.
    down due to necessary computational memory. If other programs were running on the computer,
    different times would be observed because of the unaccounted external runtimes.
 
+## Sources
 
-
+Assel Aljazwe and egkallas were helpful in this exercise
